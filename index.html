@@ -1,329 +1,351 @@
+
 <!DOCTYPE html>
-
-<html lang="en"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>💎 Crystal SMP — Official</title>
-
-<style> * { box-sizing: border-box; margin: 0; padding: 0; } html { scroll-behavior: smooth; } body { font-family: Arial, Helvetica, sans-serif; background: #08030f; color: white; line-height: 1.6; } /* NAVIGATION */ nav { position: sticky; top: 0; z-index: 1000; background: rgba(14, 5, 25, 0.95); border-bottom: 1px solid #7132a3; backdrop-filter: blur(12px); padding: 16px 7%; display: flex; justify-content: space-between; align-items: center; } .logo { color: #d9a1ff; font-size: 25px; font-weight: 900; text-shadow: 0 0 15px #9d36d8; } .nav-links { display: flex; gap: 24px; } .nav-links a { color: #eeeeee; text-decoration: none; font-weight: bold; transition: 0.2s; } .nav-links a:hover { color: #d79aff; } /* HERO */ .hero { min-height: 680px; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 80px 20px; background: radial-gradient(circle at center, #681aa0 0%, #280842 35%, #08030f 75%); } .hero h1 { font-size: clamp(50px, 10vw, 105px); color: #e1b4ff; text-shadow: 0 0 10px #a83be8, 0 0 30px #8c25c5, 0 0 70px #681aa0; margin-bottom: 15px; } .hero p { font-size: 21px; color: #dddddd; margin-bottom: 25px; } .server-box { background: rgba(15, 4, 25, 0.9); border: 1px solid #a144db; box-shadow: 0 0 30px rgba(150, 45, 220, 0.3); border-radius: 15px; padding: 15px 18px; display: flex; gap: 14px; align-items: center; } .server-ip { font-family: monospace; color: #e4b9ff; font-size: 18px; } button { border: none; border-radius: 10px; padding: 12px 18px; background: #9d3ddd; color: white; font-weight: bold; cursor: pointer; transition: 0.2s; } button:hover { background: #b65af0; transform: translateY(-2px); } #copy-message { margin-top: 15px; color: #baffcf; font-size: 15px; } /* GENERAL SECTIONS */ section { max-width: 1100px; margin: auto; padding: 80px 20px; } .section-title { text-align: center; color: #dda8ff; font-size: 40px; margin-bottom: 40px; text-shadow: 0 0 20px #7627a8; } /* FEATURES */ .feature-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 20px; } .card { background: #13071e; border: 1px solid #542477; border-radius: 18px; padding: 27px; transition: 0.25s; } .card:hover { transform: translateY(-5px); border-color: #a647d9; box-shadow: 0 0 25px rgba(158, 58, 219, 0.2); } .card h3 { color: #d99cff; font-size: 22px; margin-bottom: 8px; } /* UPDATES */ .update { background: #13071e; border: 1px solid #67308a; border-radius: 18px; padding: 28px; } .update-date { color: #a875c4; font-size: 14px; } /* HOW TO PLAY */ .step { background: #12061c; border-left: 5px solid #a13de0; border-radius: 12px; padding: 20px; margin: 15px 0; } .step-number { color: #dba1ff; font-weight: 900; font-size: 19px; } /* BUG REPORT */ .form-box { max-width: 700px; margin: auto; background: #13071e; border: 1px solid #59277b; border-radius: 18px; padding: 30px; } .form-group { margin-bottom: 18px; } label { display: block; margin-bottom: 7px; color: #dca5ff; font-weight: bold; } input, textarea { width: 100%; padding: 14px; border-radius: 10px; border: 1px solid #663080; background: #0d0414; color: white; outline: none; font-size: 15px; } input:focus, textarea:focus { border-color: #b14be9; box-shadow: 0 0 10px rgba(177, 75, 233, 0.25); } textarea { min-height: 150px; resize: vertical; } .success { display: none; margin-top: 15px; padding: 13px; border-radius: 10px; background: #123b22; color: #baffcc; } /* OWNER AREA */ .owner-box { max-width: 700px; margin: auto; background: #13071e; border: 1px solid #6e3191; border-radius: 18px; padding: 30px; } .owner-box p { color: #bbb; margin-bottom: 15px; } .owner-note { background: #24112e; border-radius: 10px; padding: 15px; color: #d9b8e8; } /* FOOTER */ footer { border-top: 1px solid #321447; text-align: center; padding: 40px 20px; color: #999; } /* MOBILE */ @media (max-width: 700px) { .nav-links { display: none; } .hero { min-height: 600px; } .server-box { flex-direction: column; } .section-title { font-size: 32px; } } </style>
-
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RAVEX | Verification</title>
+<style>
+:root {
+  --red: #dc2626;
+  --bg: #090909;
+  --panel: #151515;
+  --line: #303030;
+  --muted: #a3a3a3;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: radial-gradient(ellipse at top, #321010 0, var(--bg) 48%);
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  min-height: 100vh;
+}
+header {
+  padding: 25px 18px;
+  text-align: center;
+  border-bottom: 1px solid #292929;
+}
+.logo {
+  color: var(--red);
+  font-size: 34px;
+  font-weight: 900;
+  letter-spacing: 7px;
+}
+.tagline {
+  margin-top: 7px;
+  font-size: 11px;
+  letter-spacing: 3px;
+  color: #bbb;
+}
+main {
+  width: min(720px, 92%);
+  margin: 35px auto 60px;
+}
+.intro { text-align: center; margin-bottom: 25px; }
+h1 { font-size: clamp(27px, 5vw, 40px); margin: 0 0 12px; }
+p { color: #c3c3c3; line-height: 1.6; }
+.card {
+  background: rgba(21,21,21,.97);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: clamp(18px, 4vw, 30px);
+  margin-bottom: 18px;
+}
+label {
+  display: block;
+  font-weight: 700;
+  margin: 17px 0 8px;
+}
+input, select, textarea {
+  width: 100%;
+  border: 1px solid #3b3b3b;
+  border-radius: 8px;
+  padding: 13px;
+  background: #0c0c0c;
+  color: white;
+  font: inherit;
+}
+input[type="file"] { padding: 10px; }
+input:focus, select:focus, textarea:focus {
+  outline: 2px solid var(--red);
+  border-color: var(--red);
+}
+small, .hint { color: var(--muted); font-size: 12px; line-height: 1.5; }
+.section-title {
+  font-size: 19px;
+  border-left: 4px solid var(--red);
+  padding-left: 10px;
+  margin: 0 0 10px;
+}
+.notice {
+  background: #211010;
+  border: 1px solid #5c2525;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 13px;
+  line-height: 1.6;
+  color: #f0dada;
+}
+.checkline {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  font-weight: 400;
+  line-height: 1.5;
+}
+.checkline input {
+  width: auto;
+  margin-top: 4px;
+  accent-color: var(--red);
+}
+button {
+  width: 100%;
+  border: 0;
+  border-radius: 8px;
+  padding: 15px;
+  background: var(--red);
+  color: white;
+  font-weight: 900;
+  font-size: 15px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+button:hover { background: #b91c1c; }
+button:disabled { opacity: .65; cursor: wait; }
+[hidden] { display: none !important; }
+footer { text-align: center; padding: 20px; color: #777; font-size: 12px; }
+a { color: #ff7777; }
+</style>
 </head>
-
 <body>
-
-<!-- NAVIGATION -->
-
-<nav> <div class="logo">💎 Crystal SMP</div>
-
-<div class="nav-links">
-    <a href="#features">Features</a>
-    <a href="#updates">Updates</a>
-    <a href="#how-to-play">How to Play</a>
-    <a href="#bug-report">Report Bug</a>
-</div>
-
-</nav>
-
-<!-- HERO -->
-
-<header class="hero">
-
-<h1>💎 Crystal SMP</h1>
-
-<p>
-    Build • Survive • Trade • Create Your Story
-</p>
-
-<div class="server-box">
-
-    <span class="server-ip" id="serverIP">
-        crystalSMP32.aternos.me
-    </span>
-
-    <button onclick="copyIP()">
-        📋 Copy IP
-    </button>
-
-</div>
-
-<div id="copy-message">
-    Minecraft Java Edition
-</div>
-
+<header>
+  <div class="logo">RAVEX</div>
+  <div class="tagline">HUNT. STRIKE. DOMINATE.</div>
 </header>
 
-<!-- FEATURES -->
+<main>
+  <div class="intro">
+    <h1>Verification Center</h1>
+    <p>Apply to become a verified RAVEX player or creator. Every application is reviewed by staff.</p>
+  </div>
 
-<section id="features">
+  <div class="notice">
+    <strong>Before applying:</strong> Never submit your Roblox password,
+    login codes, browser cookies, or other account secrets. Only provide
+    the requested username, links, and evidence. Uploaded files will be
+    sent to the RAVEX verification email for staff review.
+  </div>
 
-<h2 class="section-title">
-    ✨ Crystal SMP Features
-</h2>
+  <form id="applicationForm"
+        action="https://formsubmit.co/azadoba00@gmail.com"
+        method="POST"
+        enctype="multipart/form-data">
 
-<div class="feature-grid">
-
-    <div class="card">
-        <h3>💰 Economy</h3>
-        <p>
-            Earn money, trade with players and build your own empire.
-        </p>
-    </div>
-
-    <div class="card">
-        <h3>💎 Crystal System</h3>
-        <p>
-            Collect crystals and become one of the richest players.
-        </p>
-    </div>
-
-    <div class="card">
-        <h3>📦 Custom Crates</h3>
-        <p>
-            Open crates and discover awesome rewards.
-        </p>
-    </div>
+    <input type="hidden" name="_subject" value="New RAVEX Verification Application">
+    <input type="hidden" name="_template" value="table">
+    <input type="hidden" name="_next" id="redirectUrl" value="">
+    <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
 
     <div class="card">
-        <h3>🏪 Player Shops</h3>
-        <p>
-            Create your own shop and trade with the community.
-        </p>
+      <h2 class="section-title">Application type</h2>
+      <label for="applicationType">What are you applying for?</label>
+      <select id="applicationType" name="Application type" required>
+        <option value="">Choose one</option>
+        <option value="Player Verification">Player Verification</option>
+        <option value="Creator Verification">Creator Verification</option>
+      </select>
+
+      <label for="discordName">Discord username</label>
+      <input id="discordName" name="Discord username"
+             placeholder="Your Discord username" required maxlength="100">
+
+      <label for="robloxName">Roblox username</label>
+      <input id="robloxName" name="Roblox username"
+             placeholder="Your Roblox username" required maxlength="100">
+
+      <label for="contactEmail">Contact email (optional)</label>
+      <input id="contactEmail" name="Applicant contact email"
+             type="email" placeholder="you@example.com">
+      <p class="hint">Use an email you can access. Do not enter your account password.</p>
     </div>
+
+    <section class="card" id="playerFields" hidden>
+      <h2 class="section-title">Player verification</h2>
+      <p>Players must be at least level 20 in Roblox Rivals. Staff will review your evidence before making a decision.</p>
+
+      <label for="playerLevel">Current Rivals level</label>
+      <input id="playerLevel" name="Rivals level" type="number"
+             min="20" max="10000" step="1" placeholder="20 or higher" disabled>
+
+      <label for="levelScreenshot">Screenshot showing your level</label>
+      <input id="levelScreenshot" name="Level screenshot"
+             type="file" accept="image/png,image/jpeg,image/webp" disabled>
+      <small>Accepted: PNG, JPG, or WEBP. Maximum 5 MB.</small>
+
+      <label for="gameplayVideo">Gameplay evidence video</label>
+      <input id="gameplayVideo" name="Gameplay video"
+             type="file" accept="video/mp4,video/webm,video/quicktime" disabled>
+      <small>Show your own gameplay. Keep the video under 5 MB for this form, or provide a viewable video link below.</small>
+
+      <label for="gameplayLink">Gameplay video link (optional)</label>
+      <input id="gameplayLink" name="Gameplay video link"
+             type="url" placeholder="https://..." disabled>
+
+      <label for="playerNotes">Additional information (optional)</label>
+      <textarea id="playerNotes" name="Player application notes"
+                rows="3" maxlength="1000"
+                placeholder="Anything staff should know?" disabled></textarea>
+    </section>
+
+    <section class="card" id="creatorFields" hidden>
+      <h2 class="section-title">Creator verification</h2>
+      <p>Provide a public creator profile and links to your Roblox Rivals content. Staff will review your activity and content.</p>
+
+      <label for="creatorPlatform">Main platform</label>
+      <select id="creatorPlatform" name="Creator platform" disabled>
+        <option value="">Choose a platform</option>
+        <option>YouTube</option>
+        <option>Twitch</option>
+        <option>TikTok</option>
+        <option>Other</option>
+      </select>
+
+      <label for="creatorProfile">Public creator profile URL</label>
+      <input id="creatorProfile" name="Creator profile URL"
+             type="url" placeholder="https://..." disabled>
+
+      <label for="creatorContent">Link to your Roblox Rivals content</label>
+      <input id="creatorContent" name="Rivals content URL"
+             type="url" placeholder="https://..." disabled>
+
+      <label for="creatorScreenshot">Profile screenshot (optional)</label>
+      <input id="creatorScreenshot" name="Creator profile screenshot"
+             type="file" accept="image/png,image/jpeg,image/webp" disabled>
+      <small>Accepted: PNG, JPG, or WEBP. Maximum 5 MB.</small>
+
+      <label for="creatorNotes">Tell us about your activity</label>
+      <textarea id="creatorNotes" name="Creator activity"
+                rows="3" maxlength="1000"
+                placeholder="What do you create, and how often?" disabled></textarea>
+    </section>
 
     <div class="card">
-        <h3>⚔️ Survival</h3>
-        <p>
-            Explore the world, build bases and survive with your friends.
-        </p>
+      <h2 class="section-title">Final confirmation</h2>
+      <label class="checkline">
+        <input type="checkbox" name="Rules agreement"
+               value="Agreed" required>
+        <span>I agree to follow RAVEX community rules and understand that staff decisions are based on review of my application.</span>
+      </label>
+
+      <label class="checkline">
+        <input type="checkbox" name="Evidence consent"
+               value="Agreed" required>
+        <span>I confirm the information and evidence I submit are mine or that I have permission to share them. I understand the files will be emailed to RAVEX for verification.</span>
+      </label>
+
+      <button id="submitButton" type="submit">SUBMIT APPLICATION</button>
+      <p id="formStatus" class="hint" role="status" aria-live="polite"></p>
     </div>
-
-    <div class="card">
-        <h3>🎉 Events</h3>
-        <p>
-            Join special events, challenges and community activities.
-        </p>
-    </div>
-
-</div>
-
-</section>
-
-<!-- UPDATES -->
-
-<section id="updates">
-
-<h2 class="section-title">
-    📰 New Updates
-</h2>
-
-<div class="update">
-
-    <h3>🚀 Crystal SMP Website Launch</h3>
-
-    <p class="update-date">
-        Latest Update
-    </p>
-
-    <br>
-
-    <p>
-        Welcome to the official Crystal SMP website!
-        More features, events and updates are coming soon.
-    </p>
-
-</div>
-
-</section>
-
-<!-- HOW TO PLAY -->
-
-<section id="how-to-play">
-
-<h2 class="section-title">
-    📖 How to Play
-</h2>
-
-<div class="step">
-
-    <div class="step-number">
-        1️⃣ Open Minecraft Java Edition
-    </div>
-
-    <p>
-        Start Minecraft Java Edition using the version supported by Crystal SMP.
-    </p>
-
-</div>
-
-
-<div class="step">
-
-    <div class="step-number">
-        2️⃣ Open Multiplayer
-    </div>
-
-    <p>
-        Click Multiplayer and choose Add Server.
-    </p>
-
-</div>
-
-
-<div class="step">
-
-    <div class="step-number">
-        3️⃣ Copy the Crystal SMP IP
-    </div>
-
-    <p>
-        Copy:
-        <strong>crystalSMP32.aternos.me</strong>
-    </p>
-
-</div>
-
-
-<div class="step">
-
-    <div class="step-number">
-        4️⃣ Paste the IP
-    </div>
-
-    <p>
-        Put the address into the Server Address box.
-    </p>
-
-</div>
-
-
-<div class="step">
-
-    <div class="step-number">
-        5️⃣ Join Crystal SMP
-    </div>
-
-    <p>
-        Click Done, select Crystal SMP and click Join Server.
-    </p>
-
-</div>
-
-</section>
-
-<!-- BUG REPORT -->
-
-<section id="bug-report">
-
-<h2 class="section-title">
-    🐛 Report a Bug
-</h2>
-
-<div class="form-box">
-
-    <form id="bugForm">
-
-        <div class="form-group">
-
-            <label for="username">
-                Minecraft Username
-            </label>
-
-            <input
-                id="username"
-                type="text"
-                placeholder="Your Minecraft username"
-                required
-            >
-
-        </div>
-
-
-        <div class="form-group">
-
-            <label for="bugTitle">
-                Bug Title
-            </label>
-
-            <input
-                id="bugTitle"
-                type="text"
-                placeholder="Example: Crate disappeared"
-                required
-            >
-
-        </div>
-
-
-        <div class="form-group">
-
-            <label for="bugDetails">
-                Describe the Bug
-            </label>
-
-            <textarea
-                id="bugDetails"
-                placeholder="Tell us what happened..."
-                required
-            ></textarea>
-
-        </div>
-
-
-        <button type="submit">
-            🐛 Send Bug Report
-        </button>
-
-        <div class="success" id="bugSuccess">
-            ✅ Bug report prepared successfully!
-        </div>
-
-    </form>
-
-</div>
-
-</section>
-
-<!-- OWNER -->
-
-<section>
-
-<h2 class="section-title">
-    🔐 Server Owner
-</h2>
-
-<div class="owner-box">
-
-    <p>
-        The owner can publish new Crystal SMP updates here.
-    </p>
-
-    <div class="owner-note">
-        🔒 Owner-only update publishing requires a secure
-        backend/login system. Do not put an owner password
-        directly into this HTML file.
-    </div>
-
-</div>
-
-</section>
-
-<!-- FOOTER -->
-
-<footer>
-
-<p>
-    💎 Crystal SMP
-</p>
-
-<p>
-    Official Community Website
-</p>
-
-<br>
-
-<p>
-    © 2026 Crystal SMP
-</p>
-
-</footer>
-
-<script> /* COPY SERVER IP */ function copyIP() { const ip = document.getElementById("serverIP").textContent.trim(); navigator.clipboard.writeText(ip) .then(function () { document.getElementById("copy-message").textContent = "✅ Server IP copied!"; }) .catch(function () { document.getElementById("copy-message").textContent = "📋 Copy this IP: " + ip; }); } /* BUG REPORT */ document .getElementById("bugForm") .addEventListener("submit", function(event) { event.preventDefault(); const username = document.getElementById("username").value; const title = document.getElementById("bugTitle").value; const details = document.getElementById("bugDetails").value; /* * This demo stores the latest report locally. * * IMPORTANT: * A real Discord webhook should NOT be placed * inside this browser code because visitors could * steal it. * * Connect this form to a secure backend/serverless * function when you publish the website. */ const report = { username: username, title: title, details: details, time: new Date().toISOString() }; localStorage.setItem( "crystalSMP_lastBug", JSON.stringify(report) ); document .getElementById("bugSuccess") .style.display = "block"; this.reset(); }); </script>
-
-</body> </html>
+  </form>
+
+  <p class="hint">If the form fails, check your internet connection and try again. Do not submit the same application repeatedly.</p>
+</main>
+
+<footer>RAVEX Verification • Official community application</footer>
+
+<script>
+(() => {
+  const form = document.getElementById("applicationForm");
+  const type = document.getElementById("applicationType");
+  const player = document.getElementById("playerFields");
+  const creator = document.getElementById("creatorFields");
+  const button = document.getElementById("submitButton");
+  const status = document.getElementById("formStatus");
+
+  // The success page must be uploaded beside index.html.
+  // This builds the absolute URL for your deployed GitHub Pages site.
+  document.getElementById("redirectUrl").value =
+    new URL("thanks.html", window.location.href).href;
+
+  function setSection(section, enabled) {
+    section.hidden = !enabled;
+    section.querySelectorAll("input, select, textarea").forEach((field) => {
+      field.disabled = !enabled;
+      field.required = enabled && (
+        field.id === "playerLevel" ||
+        field.id === "levelScreenshot" ||
+        field.id === "creatorPlatform" ||
+        field.id === "creatorProfile" ||
+        field.id === "creatorContent"
+      );
+    });
+  }
+
+  function updateType() {
+    setSection(player, type.value === "Player Verification");
+    setSection(creator, type.value === "Creator Verification");
+  }
+
+  type.addEventListener("change", updateType);
+  updateType();
+
+  function fileSizeOk(id, maxBytes) {
+    const input = document.getElementById(id);
+    if (input.disabled || !input.files || !input.files.length) return true;
+    return input.files[0].size <= maxBytes;
+  }
+
+  form.addEventListener("submit", (event) => {
+    status.textContent = "";
+
+    if (!type.value) {
+      event.preventDefault();
+      status.textContent = "Please choose an application type.";
+      type.focus();
+      return;
+    }
+
+    const maxFile = 5 * 1024 * 1024;
+    const totalMax = 10 * 1024 * 1024;
+    const fileInputs = [
+      "levelScreenshot", "gameplayVideo", "creatorScreenshot"
+    ].map(id => document.getElementById(id))
+     .filter(input => !input.disabled && input.files && input.files.length);
+
+    if (!fileSizeOk("levelScreenshot", maxFile) ||
+        !fileSizeOk("gameplayVideo", maxFile) ||
+        !fileSizeOk("creatorScreenshot", maxFile)) {
+      event.preventDefault();
+      status.textContent = "Each uploaded file must be 5 MB or smaller.";
+      return;
+    }
+
+    const totalSize = fileInputs.reduce(
+      (sum, input) => sum + input.files[0].size, 0
+    );
+
+    if (totalSize > totalMax) {
+      event.preventDefault();
+      status.textContent = "Your attachments exceed the 10 MB total limit. Reduce the file sizes or use a gameplay video link.";
+      return;
+    }
+
+    if (type.value === "Player Verification" &&
+        Number(document.getElementById("playerLevel").value) < 20) {
+      event.preventDefault();
+      status.textContent = "Player verification requires Rivals level 20 or higher.";
+      return;
+    }
+
+    button.disabled = true;
+    button.textContent = "SENDING APPLICATION...";
+    status.textContent = "Sending your application. Please wait and do not refresh this page.";
+
+    // Let the browser send the multipart form normally.
+    // FormSubmit will process the form and redirect to thanks.html.
+  });
+})();
+</script>
+</body>
+</html>
